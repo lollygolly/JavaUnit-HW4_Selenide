@@ -19,7 +19,7 @@ public class CardOrderTest {
     void shouldRegisterCardWithDelivery() {
 
         open("http://localhost:9999/");
-        $("[data-test-id='city'] input").setValue("Москва");
+        $("[data-test-id='city'] input").setValue("Санкт-Петербург");
 
         String planningDate = dateGenerator(4, "dd.MM.yyyy");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
